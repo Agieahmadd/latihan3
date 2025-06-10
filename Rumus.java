@@ -9,13 +9,28 @@ public class Rumus {
     private int lebar;
     private int hasil;
 
+    // Constructor untuk memastikan nilai awal atribut sama dengan nol
+    public Rumus() {
+        this.sisi = 0;
+        this.panjang = 0;
+        this.lebar = 0;
+        this.hasil = 0;
+    }
+
+    // Method accessor untuk mengembalikan nilai hasil
+    public int getHasil() {
+        return hasil;
+    }
+
     // Method untuk menghitung luas persegi (sisi * sisi)
     public int hitungLuasPersegi(int sisi) {
-        return sisi * sisi;
+        hasil = sisi * sisi;
+        return hasil;
     }
 
     // Method untuk menghitung luas persegi panjang (panjang * lebar)
     public int hitungLuasPersegiPanjang(int panjang, int lebar) {
-        return panjang * lebar;
+        hasil = panjang * lebar;
+        return hasil;
     }
 }
